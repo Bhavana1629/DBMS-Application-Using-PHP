@@ -1,0 +1,29 @@
+<html>
+<body bgcolor="orange">
+<h1><center>ADMIN LOGIN</centers></h1>
+<p></p>
+    
+        
+        <form name="login">
+            UNIVERSITY CODE: <input type="text" name="userid"/>
+           <p> Password: <input type="password" name="pswrd"/> </p>
+       
+           <P> <input type="button" onclick="check(this.form)" value="SUBMIT"/>
+            <input type="reset" value="Cancel"/></p>
+        </form>
+        <!--<script language="javascript">-->
+		<script>
+            function check(form) { /*function to check userid & password*/
+                /*the following code checkes whether the entered userid and password are matching*/
+                if(form.userid.value == "bhav" && form.pswrd.value == "bhav")
+
+{
+                    window.open('admin home.html')/*opens the target page while Id & password matches*/
+                }
+                else {
+                    alert("Error Password or Username")/*displays error message*/
+                }
+            }
+        </script>
+    </body>
+</html>
